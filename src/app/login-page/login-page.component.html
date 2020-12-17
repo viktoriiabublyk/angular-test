@@ -1,0 +1,53 @@
+<form action="card" [formGroup]="form" (ngSubmit)="submit()">
+    <h2>Login to admin </h2>
+
+
+    <div class="alert alert-info" *ngIf="message">
+        {{ message }}
+    </div>
+
+    <div
+        class="form-control"
+        [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}"
+    >
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+        <div
+            *ngIf="form.get('email').touched && form.get('email').invalid"
+            class="validation">
+            <small *ngIf="form.get('email').errors.required">
+                Error: Input email
+            </small>
+            <small *ngIf="form.get('email').errors.email">
+                Error: Is not correct email
+            </small>
+        </div>
+    </div>
+
+    <div
+        class="form-control"
+        [ngClass]="{invalid: form.get('password').touched && form.get('password').invalid}"
+    >
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password">
+        <div
+            class="validation"
+            *ngIf="form.get('password').touched && form.get('password').invalid"
+        >
+            <small *ngIf="form.get('password').errors.required">
+                Error: Input password
+            </small>
+            <small *ngIf="form.get('password').errors.minlength">
+                Error: More then {{form.get('password').errors.minlength.requiredLength}} numbers. Now it contains {{form.get('password').errors.minlength.actualLength}} numbers.
+            </small>
+        </div>
+    </div>
+
+    <button
+        type="submit"
+        class="btn bg-primary"
+        [disabled]="form.invalid || submitted"
+    >Log in</button>
+
+</form>
+

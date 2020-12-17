@@ -1,0 +1,23 @@
+<div *ngIf="product$ | async as product; else loading" class="product">
+    <div class="header">
+        <h1>{{ product.name }}</h1>
+    </div>
+
+    <div class="product-category">
+        <small>Product category: {{ product.category}}</small>
+    </div>
+
+    <div class="text">
+        <p>{{product.text}}</p>
+    </div>
+
+    <button
+        [routerLink]="['/']"
+        class="btn btn-dark">Back to product list</button>
+
+</div>
+
+<ng-template #loading>
+    <p class="text-center">Post Loading...</p>
+</ng-template>
+

@@ -1,0 +1,57 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <h1>Create new product</h1>
+
+    <div
+        class="form-control"
+        [ngClass]="{invalid: form.get('name').touched && form.get('name').invalid}"
+    >
+        <label for="name">Product Name:</label>
+        <input id="name" type="text" formControlName="name">
+        <div
+            *ngIf="form.get('name').touched && form.get('name').invalid"
+            class="validation">
+            <small *ngIf="form.get('name').errors.required">
+                Error: Input Product Name
+            </small>
+        </div>
+    </div>
+
+    <div
+        class="form-control"
+        [ngClass]="{invalid: form.get('text').touched && form.get('text').invalid}"
+    >
+        <label for="text">Product Info:</label>
+        <input id="text" type="text" formControlName="text">
+        <div
+            *ngIf="form.get('text').touched && form.get('text').invalid"
+            class="validation">
+            <small *ngIf="form.get('text').errors.required">
+                Error: Input Product Info
+            </small>
+        </div>
+    </div>
+
+
+    <div
+        class="form-control"
+        [ngClass]="{invalid: form.get('category').touched && form.get('category').invalid}"
+    >
+        <label for="category">Product Category:</label>
+        <input id="category" type="text" formControlName="category">
+        <div
+            *ngIf="form.get('category').touched && form.get('category').invalid"
+            class="validation">
+            <small *ngIf="form.get('category').errors.required">
+                Error: Input Product Category
+            </small>
+        </div>
+    </div>
+
+    <button
+        type="submit"
+        class="btn btn-block badge-dark"
+        [disabled]="form.invalid"
+    >Create Post</button>
+
+</form>
+

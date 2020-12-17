@@ -1,0 +1,17 @@
+<a [routerLink]="['new']">Create New Product</a>
+<a [routerLink]="['login']">Log In</a>
+<div  *ngIf="products$ | async as products; else loading" class="products">
+    <app-product
+        *ngFor="let product of products"
+        [product]="product"
+    ></app-product>
+</div>
+<div>
+    <button class="btn btn-primary" (click) ="firstPage()"> First</button>
+    <button class="btn btn-primary" (click) ="previousPage()"> Previous</button>
+    <button class="btn btn-primary" (click) ="nextPage()"> Next</button>
+    <button class="btn btn-primary" (click) ="lastPage()"> Last</button>
+</div>
+<ng-template #loading>
+    <p class="text-center">Loading Products...</p>
+</ng-template>

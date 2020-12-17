@@ -1,0 +1,141 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "duncan",
+      "country": "australia",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "sarah",
+      "country": "england",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "username": "admin",
+      "country": "usa",
+      "password": "123"
+    },
+    {
+      "username": "test2",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Hammer",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 2,
+      "name": "Hammer",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 3,
+      "name": "Screw driver",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 4,
+      "name": "Paint brush",
+      "text": "bla bla",
+      "category": "paint",
+      "user_id": ""
+    },
+    {
+      "id": 6,
+      "name": "Paint",
+      "text": "bla bla",
+      "category": "paint",
+      "user_id": ""
+    },
+    {
+      "name": "Block",
+      "text": "gvmhgkyvg ",
+      "category": "dbrtb",
+      "id": 7
+    },
+    {
+      "name": "Block",
+      "text": "ghkvkhgvjhblblkjniu7gv gbj",
+      "category": "tools tools",
+      "id": 8
+    },
+    {
+      "name": "Block",
+      "text": "ghkvkhgvjhblblkjniu7gv gbj",
+      "category": "dbrtb",
+      "id": 9
+    },
+    {
+      "id": 11,
+      "name": "Hammer",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 12,
+      "name": "Hammer",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 13,
+      "name": "Screw driver",
+      "text": "bla bla",
+      "category": "tools",
+      "user_id": ""
+    },
+    {
+      "id": 14,
+      "name": "Paint brush",
+      "text": "bla bla",
+      "category": "paint",
+      "user_id": ""
+    },
+    {
+      "id": 16,
+      "name": "Paint",
+      "text": "bla bla",
+      "category": "paint",
+      "user_id": ""
+    },
+    {
+      "name": "Block",
+      "text": "gvmhgkyvg ",
+      "category": "dbrtb",
+      "id": 17
+    },
+    {
+      "name": "Block",
+      "text": "ghkvkhgvjhblblkjniu7gv gbj",
+      "category": "tools tools",
+      "id": 18
+    },
+    {
+      "name": "Block",
+      "text": "ghkvkhgvjhblblkjniu7gv gbj",
+      "category": "dbrtb",
+      "id": 19
+    },
+    {
+      "name": "Block NEW",
+      "text": "Block NEW",
+      "category": "Block NEW",
+      "id": 20
+    }
+  ]
+}
